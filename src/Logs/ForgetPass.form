@@ -170,12 +170,11 @@
               <Font name="Times New Roman" size="14" style="1"/>
             </Property>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="5">
-                <StringItem index="0" value="What&apos;s the name of your first Girlfriend?"/>
-                <StringItem index="1" value="What&apos;s the lastname of your Mother?"/>
-                <StringItem index="2" value="What&apos;s your favorite Movie?"/>
-                <StringItem index="3" value="What&apos;s your favorite Song?"/>
-                <StringItem index="4" value="What&apos;s your favorite Sports?"/>
+              <StringArray count="4">
+                <StringItem index="0" value="What&apos;s the lastname of your Mother?"/>
+                <StringItem index="1" value="What&apos;s your favorite Movie?"/>
+                <StringItem index="2" value="What&apos;s your favorite Song?"/>
+                <StringItem index="3" value="What&apos;s your favorite Sports?"/>
               </StringArray>
             </Property>
           </Properties>

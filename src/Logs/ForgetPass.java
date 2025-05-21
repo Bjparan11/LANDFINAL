@@ -189,7 +189,7 @@ public class ForgetPass extends javax.swing.JFrame {
         acc_id1.setText("Username :");
 
         sq.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        sq.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "What's the name of your first Girlfriend?", "What's the lastname of your Mother?", "What's your favorite Movie?", "What's your favorite Song?", "What's your favorite Sports?" }));
+        sq.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "What's the lastname of your Mother?", "What's your favorite Movie?", "What's your favorite Song?", "What's your favorite Sports?" }));
 
         acc_id2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         acc_id2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

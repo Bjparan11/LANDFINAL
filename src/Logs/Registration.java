@@ -88,6 +88,8 @@ public class Registration extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         email = new javax.swing.JTextField();
         type = new javax.swing.JComboBox<>();
+        sq = new javax.swing.JComboBox<>();
+        securityAnswerField = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -96,8 +98,8 @@ public class Registration extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Username :");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 180, -1, 30));
-        getContentPane().add(cnum, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 340, 180, 30));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 170, -1, 30));
+        getContentPane().add(cnum, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 330, 290, 30));
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -109,10 +111,10 @@ public class Registration extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(25, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(81, 81, 81)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 774, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31))
+                .addContainerGap(105, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -121,21 +123,23 @@ public class Registration extends javax.swing.JFrame {
                 .addGap(0, 10, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 50));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 960, 50));
 
+        jLabel4.setBackground(new java.awt.Color(204, 204, 204));
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/33.jpg"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 490, 420));
+        jLabel4.setOpaque(true);
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 490, 570));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Confirm Password :");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 260, 140, 30));
-        getContentPane().add(cpass, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 260, 180, 30));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 250, 140, 30));
+        getContentPane().add(cpass, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 250, 290, 30));
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("REGISTRATION FORM");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 50, 230, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 50, 230, -1));
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jButton1.setText("Logout");
@@ -144,7 +148,7 @@ public class Registration extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 420, 110, 40));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 570, 110, 40));
 
         jButton2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jButton2.setText("Registration");
@@ -153,45 +157,50 @@ public class Registration extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 420, 120, 40));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 570, 120, 40));
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("Last Name :");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 140, 90, 30));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 130, 90, 30));
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("First Name :");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 100, 90, 30));
-        getContentPane().add(fname, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 100, 180, 30));
-        getContentPane().add(lname, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 140, 180, 30));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 90, 90, 30));
+        getContentPane().add(fname, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 90, 290, 30));
+        getContentPane().add(lname, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 130, 290, 30));
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("Phone Number :");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 340, 140, 30));
-        getContentPane().add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 220, 180, 30));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 330, 140, 30));
+        getContentPane().add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 210, 290, 30));
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText("Password :");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 220, 80, 30));
-        getContentPane().add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 180, 180, 30));
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 210, 80, 30));
+        getContentPane().add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 170, 290, 30));
 
         jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setText("Email :");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 300, 80, 30));
-        getContentPane().add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 300, 180, 30));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 290, 80, 30));
+        getContentPane().add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 290, 290, 30));
 
         type.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         type.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Admin", "User" }));
-        getContentPane().add(type, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 380, 180, -1));
+        getContentPane().add(type, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 370, 290, -1));
 
-        jLabel3.setBackground(new java.awt.Color(204, 255, 255));
+        sq.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        sq.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "What's the lastname of your Mother?", "What's your favorite Movie?", "What's your favorite Song?", "What's your favorite Sports?" }));
+        getContentPane().add(sq, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 410, 290, 30));
+        getContentPane().add(securityAnswerField, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 450, 290, -1));
+
+        jLabel3.setBackground(new java.awt.Color(204, 204, 204));
         jLabel3.setOpaque(true);
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 50, 340, 420));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 50, 470, 580));
 
         pack();
         setLocationRelativeTo(null);
@@ -231,10 +240,10 @@ public class Registration extends javax.swing.JFrame {
             {
             String pass = passwordHasher.hashPassword(password.getText());
 
-            if (dbc.insertData("INSERT INTO user(i_fname, i_lname, i_username, i_password, i_email, i_phonenumber, i_type, status) "
+            if (dbc.insertData("INSERT INTO user(i_fname, i_lname, i_username, i_password, i_email, i_phonenumber, i_type, status, security_answer,security_question,i_image) "
                 + "VALUES('" + fname.getText() + "', '" + lname.getText() + "', '"
                 + username.getText() + "', '" + pass + "', '"
-                + email.getText() + "','" + cnum.getText() + "', '" + type.getSelectedItem().toString() + "', 'PENDING')")) {
+                + email.getText() + "','" + cnum.getText() + "', '" + type.getSelectedItem().toString() + "','" + securityAnswerField.getText().toString() + "','" + sq.getSelectedItem() + "', 'PENDING')")) {
             JOptionPane.showMessageDialog(null, "Register Successfully");
 
             Login ads = new Login();
@@ -304,6 +313,8 @@ public class Registration extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField lname;
     private javax.swing.JPasswordField password;
+    private javax.swing.JTextField securityAnswerField;
+    private javax.swing.JComboBox<String> sq;
     private javax.swing.JComboBox<String> type;
     private javax.swing.JTextField username;
     // End of variables declaration//GEN-END:variables
